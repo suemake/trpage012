@@ -1,0 +1,118 @@
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+.default .title {
+    /* padding: 40px 0; */
+
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.default .title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.default .title a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.eh_btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 20px;
+    background: #222;
+    color: #fff;
+
+
+    white-space: nowrap;
+}
+
+.title_btn a {
+    position: relative;
+    z-index: 1;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 24px;
+
+    background: #eee;
+    color: #222;
+    border-radius: 24px;
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+.title_btn a:hover {
+    color: #fff;
+}
+
+.title_btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 0%;
+
+    color: #fff;
+    background: #222;
+
+    transition: 0.4s;
+}
+
+.title_btn a:hover::before {
+    top: auto;
+    bottom: 0%;
+    height: 100%;
+}
+
+.arrow_btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    height: 40px;
+}
+
+
+.arrow_btn::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: #333;
+
+    transition: 0.2s;
+}
+
+.arrow_btn:hover::after {
+    width: 120px;
+}
+
+.arrow_btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 8px;
+    height: 1px;
+    background: #333;
+    transform: rotate(45deg);
+    transform-origin: right;
+}
